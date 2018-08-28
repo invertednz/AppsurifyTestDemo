@@ -77,5 +77,23 @@
             <report format="frames" todir="${report.dir}"/>
         </junitreport>
     </target>
+	
+	<target name="test" depends="compile-test">
+	        <mkdir dir="${report.data.dir}"/>
+	        <mkdir dir="${report.dir}"/>
+	        <retry retrycount="3">
+	        <junit fork="no" haltonfailure="no" showoutput="yes" printsummary="true">
+	            <test name="${junit.class.name}" todir="${report.data.dir}"/>
+	            <formatter type="xml"/>
+	            <classpath refid="classpath" />
+	        </junit>
+	        </retry>
+	        <junitreport todir="${report.dir}">
+	            <fileset dir="${report.data.dir}">
+	                <include name="TEST-*.xml"/>
+	            </fileset>
+	            <report format="frames" todir="${report.dir}"/>
+	        </junitreport>
+	    </target>
 
 </project>
