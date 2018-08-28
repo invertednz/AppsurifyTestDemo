@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="JUnitHelloWord" default="all" basedir=".">
+<project name="AppsurifyTestDemo" default="all" basedir=".">
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++ -->
     <!-- Edit here: select main class to run test suite -->
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -8,7 +8,7 @@
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++ -->
     <!-- PLEASE DO NOT EDIT FROM HERE TO END OF FILE -->
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <description>Builds, tests, and runs JUnitHelloWord</description>
+    <description>Builds, tests, and runs AppsurifyTestDemo</description>
     <property name="test.dir" location="${basedir}/src/test/java"/>
     <property name="bin.dir" value="${basedir}/target"/>
     <property name="report.dir" location="${bin.dir}/junit-reports"/>
